@@ -20,7 +20,7 @@ public class c1 {
 		System.out.println(new TestData().properties.getProperty("t3"));	
 		
 		
-		RestAssured.baseURI="https://www.boredapi.com/";
+		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("ttestpi")+".com/";
 		RestAssured.basePath="api/activity";
 		
 		RestAssured.given().log().all().get().prettyPrint();
