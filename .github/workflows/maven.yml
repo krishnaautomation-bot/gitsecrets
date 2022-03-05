@@ -23,4 +23,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      env:
+       one: ${{ secrets.ONE }}
       run: mvn -B package --file pom.xml
