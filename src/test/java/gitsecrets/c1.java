@@ -2,6 +2,8 @@ package gitsecrets;
 
 import org.testng.annotations.Test;
 
+import io.restassured.RestAssured;
+
 public class c1 {
 	
 	
@@ -15,7 +17,15 @@ public class c1 {
 		
 		System.out.println(new TestData().properties.getProperty("tone"));
 		System.out.println(new TestData().properties.getProperty("ttwo"));
-		System.out.println(new TestData().properties.getProperty("t3"));		
+		System.out.println(new TestData().properties.getProperty("t3"));	
+		
+		
+		RestAssured.baseURI="https://www.boredapi.com/";
+		RestAssured.basePath="api/activity";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		
 		
 		
 	}
