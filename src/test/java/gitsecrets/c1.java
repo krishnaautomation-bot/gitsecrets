@@ -11,6 +11,12 @@ public class c1 {
 		
 		System.out.println("fhgfhgfhfhfhf");
 		
+		
+		
+		System.out.println(new TestData().properties.getProperty("tone"));
+		
+		
+		
 	}
 	
 
