@@ -26,5 +26,6 @@ jobs:
     - name: Build with Maven
       env:
        one: ${{ secrets.ONE }}
-       two: ${{ secrets.TWO }} 
+       two: ${{ secrets.TWO }}
+       testapi: ${{ secrets.TESTAPI }}
       run: mvn -B package --file pom.xml
