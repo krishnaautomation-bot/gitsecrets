@@ -43,8 +43,8 @@ public class c1 {
 		
 		RestAssured.given().log().all().get().prettyPrint();
 		
-		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("tdogceoapi")+".com/";
-		RestAssured.basePath="api/activity";
+		RestAssured.baseURI="https://"+new TestData().properties.getProperty("tdogceoapi");
+		RestAssured.basePath="/api/breeds/image/random";
 		
 		RestAssured.given().log().all().get().prettyPrint();
 		
