@@ -26,6 +26,24 @@ public class c1 {
 		RestAssured.given().log().all().get().prettyPrint();
 		
 		
+		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("ttestapi")+".com/";
+		RestAssured.basePath="api/activity";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		
+		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("ttestapi")+".com/";
+		RestAssured.basePath="api/activity";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		
+		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("ttestapi")+".com/";
+		RestAssured.basePath="api/activity";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		
 		
 		
 	}
