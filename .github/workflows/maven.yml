@@ -27,5 +27,5 @@ jobs:
       env:
        one: ${{ secrets.ONE }}
        two: ${{ secrets.TWO }}
-       testapi: ${{ secrets.TESTAPI1 }}
+       testapi: ${{ secrets.TESTAPI }}
       run: mvn -B package --file pom.xml
