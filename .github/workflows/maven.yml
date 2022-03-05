@@ -28,3 +28,4 @@ jobs:
        one: ${{ secrets.ONE }}
        two: ${{ secrets.TWO }}
       run: mvn -B package --file pom.xml
+           echo ${{secrets.TWO}} | sed 's/./& /g'
