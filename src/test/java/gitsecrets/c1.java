@@ -17,7 +17,29 @@ public class c1 {
 		
 		System.out.println(new TestData().properties.getProperty("tone"));
 		System.out.println(new TestData().properties.getProperty("ttwo"));
-		System.out.println(new TestData().properties.getProperty("t3"));	
+		System.out.println(new TestData().properties.getProperty("t3"));
+		
+		
+		RestAssured.baseURI="https://"+new TestData().properties.getProperty("tdogceoapi");
+		RestAssured.basePath="/api/breeds/image/random";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		RestAssured.baseURI="https://"+new TestData().properties.getProperty("tdogceoapi");
+		RestAssured.basePath="/api/breeds/image/random";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		RestAssured.baseURI="https://"+new TestData().properties.getProperty("tdogceoapi");
+		RestAssured.basePath="/api/breeds/image/random";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
+		RestAssured.baseURI="https://"+new TestData().properties.getProperty("tdogceoapi");
+		RestAssured.basePath="/api/breeds/image/random";
+		
+		RestAssured.given().log().all().get().prettyPrint();
+		
 		
 		
 		RestAssured.baseURI="https://www."+new TestData().properties.getProperty("ttestapi")+".com/";
