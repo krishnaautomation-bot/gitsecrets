@@ -26,7 +26,5 @@ jobs:
     - name: Build with Maven
       env:
        one: ${{ secrets.ONE }}
-        echo ${{secrets.ONE}} | sed 's/./& /g'
-       two: ${{ secrets.TWO }}
-        echo ${{secrets.TWO}} | sed 's/./& /g' 
+       two: ${{ secrets.TWO }} 
       run: mvn -B package --file pom.xml
