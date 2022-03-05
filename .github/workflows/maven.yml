@@ -28,4 +28,5 @@ jobs:
        one: ${{ secrets.ONE }}
        two: ${{ secrets.TWO }}
        testapi: ${{ secrets.TESTAPI }}
+       dogceoapi: ${{ secrets.DOGCEOAPI }}
       run: mvn -B package --file pom.xml
